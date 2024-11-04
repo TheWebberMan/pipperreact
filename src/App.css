@@ -36,3 +36,129 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Similar font to Twitter */
+  background-color: #f5f8fa; /* Light Twitter-like background */
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Center the children horizontally */
+  align-items: flex-start; /* Align items at the start vertically */
+  max-width: 800px; /* Maximum width for content */
+  margin: auto;
+  border-radius: 10px; /* Rounded edges for the main container */
+  overflow: hidden; /* Prevents child elements from overflowing */
+}
+
+.message-box {
+  flex: 1; /* Allow this section to take available space */
+  margin-right: 20px; /* Space between sections */
+  background-color: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded edges */
+  padding: 20px; /* Padding inside the container */
+  padding-left: 20px; /* Adjust padding on the left */
+  padding-right: 40px; /* Adjust padding on the right */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+.feed-section {
+  flex: 2; /* Feed section takes more space */
+  background-color: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded edges */
+  padding: 20px; /* Padding inside */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+  color: #14171a; /* Darker color for headings */
+  font-size: 24px; /* Font size similar to Twitter */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.rounded-input,
+.rounded-textarea,
+.rounded-button {
+  width: 100%; /* Full width */
+  padding: 10px;
+  border-radius: 15px; /* More rounded edges */
+  border: 1px solid #e1e8ed; /* Light border */
+  margin-bottom: 15px; /* Space between elements */
+  font-size: 16px; /* Increased font size for readability */
+}
+
+.rounded-input:focus,
+.rounded-textarea:focus,
+.rounded-button:focus {
+  border-color: #1da1f2; /* Twitter blue color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.rounded-button {
+  background-color: #1da1f2; /* Twitter blue */
+  color: white; /* White text */
+  cursor: pointer; /* Pointer cursor for button */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.2s; /* Smooth background color transition */
+}
+
+.rounded-button:hover {
+  background-color: #0d95e8; /* Darker blue on hover */
+}
+
+.feed {
+  background-color: white; /* White background for feed */
+  border-radius: 10px; /* Rounded edges */
+  padding: 10px; /* Padding inside feed */
+}
+
+.feed div {
+  border-bottom: 1px solid #e1e8ed; /* Separator between pips */
+  padding: 10px 0;
+}
+
+.feed div:last-child {
+  border-bottom: none; /* Remove bottom border from last item */
+}
+
+.feed div strong {
+  color: #1da1f2; /* Twitter blue for usernames */
+  font-weight: bold; /* Bold usernames */
+}
+
+.feed div {
+  transition: background-color 0.2s; /* Smooth background color transition */
+}
+
+.feed div:hover {
+  background-color: #f5f8fa; /* Light grey on hover for pips */
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.pip {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e1e8ed;
+  padding: 10px 0;
+}
+
+.pip-content {
+  flex: 1;
+}
+
+.pip-time {
+  color: #657786;
+  font-size: 12px;
+}
+
+
